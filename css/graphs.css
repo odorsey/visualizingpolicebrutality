@@ -1,0 +1,81 @@
+/* This CSS is for all graphs*/
+.axis path,
+.axis line {
+  fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+#chart {
+  font-size: 10px;
+  padding: 10px;
+}
+
+.bar {
+  fill: #4aaeea;
+}
+
+.bar:hover {
+  fill: red;
+  cursor: pointer;
+}
+
+.selected {
+  fill: red;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 2px;
+  transition: 0.6s;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.5);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+#donut1, #line1, .dataText, #donut2 {
+  font: 12px sans-serif;
+}
+
+.line {
+  fill: none;
+  stroke: #CD2626;
+  stroke-width: 1.5px;
+}
+
+.content {
+  font-size: 1.3em;
+}
+
+/* For donut chart on The Act of Brutality */
+.arc {
+  transition-timing-function: ease-in;
+  transition: 0.6s;
+}
+.arc:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}

@@ -1,0 +1,220 @@
+/*Reset map button, inspired by Leaflet*/
+.menu-ui {
+background:#fff;
+position:absolute;
+top:10px;
+right:45px;
+z-index:2;
+border-radius:3px;
+width:120px;
+border:1px solid rgba(0,0,0,0.4);
+}
+
+.menu-ui a {
+font-size:13px;
+color:#404040;
+display:block;
+margin:0;padding:0;
+padding:10px;
+text-decoration:none;
+border-bottom:1px solid rgba(0,0,0,0.25);
+text-align:center;
+}
+
+.menu-ui a:first-child {
+border-radius:3px 3px 0 0;
+}
+
+.menu-ui a:last-child {
+border:none;
+border-radius:0 0 3px 3px;
+}
+
+.menu-ui a:hover {
+background:#f8f8f8;
+color:#404040;
+}
+
+.menu-ui a.active,
+.menu-ui a.active:hover {
+background:#3887BE;
+color:#FFF;
+}
+/*End Reset Button*/
+
+#map {
+  z-index: 1; /*if this is negative, can't click markers, if 1, can't get box shadow of previous element*/
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+  width: 100%;
+  height: 87%;
+  position: absolute;
+  right:0;
+}
+
+.nopadding { /*needed to prevent padding between navbar and map and other elements*/
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* About Modal CSS */
+.modal-header {
+  border-bottom: 0px;
+}
+
+.modal-footer {
+  border-top: 0px;
+}
+
+.modal-content{
+  border-radius: 0px;
+}
+
+/*Menu CSS from http://tympanus.net/codrops/2013/04/17/slide-and-push-menus/ */
+.cbp-spmenu {
+  background: #E1E1E1;
+  position: absolute;
+  z-index: 99;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.18);
+-moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.18);
+box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.18);
+}
+
+.cbp-spmenu2 {
+  background: #000000;
+  position: absolute;
+  z-index: 99;
+  color: #9d9d9d;
+}
+
+.cbp-spmenu h3 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 0;
+  font-weight: 300;
+  background: #9d9d9d;
+}
+
+.cbp-spmenu2 h3 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 0;
+  font-weight: 300;
+  background: #778899;
+}
+
+.cbp-spmenu h4, .cbp-spmenu2 h4 {
+  font-size: 1.25em;
+}
+
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+  background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+  width: 45%;
+  height: 93.4%;
+  top: 20;
+  z-index: 99;
+}
+
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid #258ecd;
+  padding: 1em;
+}
+
+.cbp-spmenu-vertical-right {
+  width: 45%;
+  max-width: 250px;
+  height: 45%;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+  left: -45%;
+}
+
+.cbp-spmenu-right {
+  right: -45%;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+
+.img-slide {
+	float: left;
+	margin: 1%;
+	padding: 0px;
+	height: 40%;
+}
+
+.desc-slide {
+  font-size: 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.sliderText{
+  padding: 10px;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+button.close.slider {
+  padding: 5px;
+}
+
+#leftClose {
+  float: left;
+  padding: 0px;
+}
+
+.back, .back-right {
+  cursor:pointer;
+}
+
+.back:hover, .back-right:hover {
+  color: #000000;
+}
+
+.back-right {
+  padding-left: 5%;
+}
+
+#beforeFooter{
+  margin-top: 48%;
+}
+
+.axis text {
+  font-family: Kalinga;
+  font-size: 1.15em;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #E0E0E0;
+  shape-rendering: crispEdges;
+}

@@ -1,0 +1,15 @@
+
+.paging {
+  font-size: 20px;
+}
+
+
+/* Data table on data.php */
+.table {
+  margin-bottom: 10px;
+  margin-top: 2%;
+}
+
+.table-nonfluid {
+   width: auto !important;
+}

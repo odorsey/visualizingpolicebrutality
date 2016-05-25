@@ -1,0 +1,92 @@
+/* CSS for the basic structure. Any CSS for specific pages will be located in separate CSS files*/
+
+/** {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}*/
+
+html, body {
+   width: 100%;
+   height: 100%;
+   font-size: 0.95em;
+   font-family: 'Kalinga', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
+  background: #e7e7e7;
+}
+
+.navbar-btn {
+padding-left: 20px;
+}
+
+.navbar-bottom {
+  height: auto;
+  margin-bottom: -1%;
+}
+
+.quote {
+  font-size: 3em;
+}
+
+ul.twitterList {
+  list-style-type: none;
+  font-family: Verdana;
+}
+
+.tweets {
+	border-radius: 12px;
+	border: 1px solid #E1E1E1;
+	margin: 1%;
+	padding: 1%;
+	font-size: 0.80em;
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.05);
+	box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.05);
+}
+
+.tweet {
+max-width: 300px;
+}
+
+.short { /*This is for tweets that are short and mess up the spacing*/
+	margin-bottom: 28px;
+}
+
+.user {
+	display: inline-block;
+}
+
+.nav-center {
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+}
+
+.wrapper {
+height: 86%;
+}
+
+#vicDesc {
+  font-size: 1.25em;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  position: absolute;
+}
+
+.navbar-center ul li{
+    display: inline-block;
+    margin: 0 auto;
+ }
