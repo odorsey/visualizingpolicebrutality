@@ -34,26 +34,6 @@ if($result = mysqli_query($db,$query)) {
   }
 }
 
-
-//function convert_to_csv($input_array, $output_file_name, $delimiter)
-//{
-    /** open raw memory as file, no need for temp files, be careful not to run out of memory though */
-    //$newFile = "allAgesIncidents.csv";
-    //$f = fopen($newFile, 'w') or die ("Can't open file.");
-
-    /** loop through array  */
-    //foreach ($input_array as $line) {
-        /** default php csv handler **/
-        //fputcsv($f, $line, $delimiter);
-    //}
-    /** rewrind the "file" with the csv lines **/
-    //fseek($f, 0);
-
-    /** Send file to browser for download */
-    //fclose($newFile);
-//}
-//convert_to_csv($data, 'allAgesIncidents.csv', ',');
-
 echo json_encode($data, JSON_PRETTY_PRINT);
 
 ?>
