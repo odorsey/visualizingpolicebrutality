@@ -26,10 +26,9 @@ $total_pages = mysqli_fetch_assoc(mysqli_query($db,$countquery));
 $total_pages = $total_pages['num'];
 
 // Variable set up
-//$page = ($_GET['page']);
 $limit = 25;
 $targetpage = "data.php";
-//echo $total_pages;
+
 
 // GET request set up for each page to $page
 if(isset($_GET['page'])) {
@@ -40,7 +39,6 @@ else {
   $page = 0;
   $offset = 0;
 }
-
 
 // setting up pagination, every page is in increments of 25
 if($page)
@@ -65,22 +63,18 @@ if(isset($_GET['sortby'])) {
   {
 
       $header = "lastName";
-      //$query .= " ORDER BY lastName";
   }
   elseif ($_GET['sortby'] == 'sex')
   {
       $header = "sex";
-      //$query .= " ORDER BY sex";
   }
   elseif ($_GET['sortby'] == 'age')
   {
       $header = "age";
-      //$query .= " ORDER BY age";
   }
   elseif ($_GET['sortby'] == 'killed')
   {
       $header ="killed";
-      //$query .= " ORDER BY killed";
   }
 }
 
